@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Deportivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #4caf50, #81c784);
+            color: #fff;
+        }
+        header {
+            background: #388e3c;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background: #66bb6a;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+        .tabs button {
+            background: #43a047;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .tabs button.active {
+            background: #2e7d32;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .section.active {
+            display: block;
+        }
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #388e3c;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Evento Deportivo</h1>
+</header>
+
+<div class="container">
+    <div class="tabs">
+        <button class="tab-button active" onclick="showSection('competencia')">Competencias</button>
+        <button class="tab-button" onclick="showSection('deportistas')">Deportistas</button>
+        <button class="tab-button" onclick="showSection('equipo')">Equipos</button>
+        <button class="tab-button" onclick="showSection('evento')">Eventos</button>
+        <button class="tab-button" onclick="showSection('ubicacion')">Ubicaciones</button>
+    </div>
+
+    <div id="competencia" class="section active">
+        <h2>Competencias</h2>
+        <img src="https://via.placeholder.com/800x400?text=Competencias" alt="Imagen de Competencias">
+        <ul>
+            <li>Atletismo</li>
+            <li>Natación</li>
+            <li>Ciclismo</li>
+            <li>Gimnasia</li>
+            <li>Tenis</li>
+            <li>Fútbol</li>
+            <li>Baloncesto</li>
+            <li>Esgrima</li>
+            <li>Rugby</li>
+            <li>Voleibol</li>
+        </ul>
+    </div>
+
+    <div id="deportistas" class="section">
+        <h2>Deportistas</h2>
+        <img src="https://via.placeholder.com/800x400?text=Deportistas" alt="Imagen de Deportistas">
+        <ul>
+            <li>Juan Pérez</li>
+            <li>María Gómez</li>
+            <li>Roberto Fernández</li>
+            <li>Carla López</li>
+            <li>David Ortiz</li>
+            <li>Lucía Martínez</li>
+            <li>Pablo Ramírez</li>
+            <li>Sofía Herrera</li>
+            <li>Jorge Díaz</li>
+            <li>Andrea Castro</li>
+        </ul>
+    </div>
+
+    <div id="equipo" class="section">
+        <h2>Equipos</h2>
+        <img src="https://via.placeholder.com/800x400?text=Equipos" alt="Imagen de Equipos">
+        <ul>
+            <li>Alpha</li>
+            <li>Beta</li>
+            <li>Gamma</li>
+            <li>Delta</li>
+            <li>Epsilon</li>
+            <li>Zeta</li>
+            <li>Eta</li>
+            <li>Theta</li>
+            <li>Iota</li>
+            <li>Kappa</li>
+        </ul>
+    </div>
+
+    <div id="evento" class="section">
+        <h2>Eventos</h2>
+        <img src="https://via.placeholder.com/800x400?text=Eventos" alt="Imagen de Eventos">
+        <ul>
+            <li>Campeonato Nacional</li>
+            <li>Juegos Olímpicos</li>
+            <li>Mundial de Fútbol</li>
+            <li>Copa Davis</li>
+            <li>Maratón Internacional</li>
